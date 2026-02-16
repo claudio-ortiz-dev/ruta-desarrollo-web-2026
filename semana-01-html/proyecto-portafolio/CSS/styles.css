@@ -45,3 +45,86 @@ a {
 p {
     margin: 0;
 }
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* Layout */
+    min-height: 100vh;          /* ← CAMBIO: 450px → 100vh */
+    padding: 2rem;
+    
+    /* Estética */
+    background-color: #54545f;
+    color: #ffffff;             /* ← CAMBIO: aqua → blanco */
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    font-weight: 700;           /* 700 = bold */
+    margin-bottom: 1.5rem;      /* ← CAMBIO: 0.5rem → 1.5rem */
+    color: #ffffff;             /* ← EXPLÍCITO */
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    margin-bottom: 2rem;        /* Separación extra antes de botón */
+    color: #e6e0e0;
+    max-width: 60rem;           /* Mejor: 600px = 60rem */
+    line-height: 1.6;
+}
+
+.btn-primario {
+    display: inline-block;
+    
+    /* Padding: generoso */
+    padding: 1.2rem 2.4rem;     /* ← CAMBIO: 0.8rem 1.5rem */
+    
+    /* Estética */
+    background-color: #007BFF;
+    color: #ffffff;
+    border-radius: 0.4rem;      /* 4px */
+    
+    /* Tipografía */
+    font-size: 1.6rem;
+    font-weight: 600;           /* Semi-bold */
+    
+    /* Interacción */
+    transition: all 0.3s ease;  /* all, no solo background */
+    cursor: pointer;
+}
+
+.btn-primario:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Sube 2px */
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-primario:active {
+    transform: translateY(0);   /* Vuelve a normal al clickear */
+}
+
+/* ========================================
+   RESPONSIVE (Mobile-First)
+   ======================================== */
+
+/* Tablet: 768px+ */
+@media (min-width: 768px) {
+    .hero {
+        min-height: 100vh;
+        padding: 4rem 2rem;     /* Más espaciado en tablet+ */
+    }
+    
+    .hero h1 {
+        font-size: 4.8rem;      /* ← Más grande en desktop */
+    }
+}
