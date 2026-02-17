@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto - Claudio Ortiz">
+    <title>Contacto - Claudio Ortiz</title>
+</head>
+<body>
+
+    <header>
+        <h1>Contáctame</h1>
+        <p>Respondo en menos de 24 horas</p>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+
+            
+            <div>
+                <label for="nombre">Nombre completo:</label>
+                <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre"
+                    placeholder="Ej: Juan Pérez"
+                    required>
+            </div>
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email"
+                    placeholder="Ej: juan.perez@example.com"
+                    required>
+            </div>
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input 
+                    type="tel" 
+                    id="telefono" 
+                    name="telefono"
+                    placeholder="Ej: 555-1234">
+            </div>
+            <div>
+                <label for="asunto">Asunto:</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="">Selecciona un asunto</option>
+                    <option value="consultoria">Oportunidad de trabajo</option>
+                    <option value="proyecto">Proyecto freelance</option>
+                    <option value="colaboración">Colaboración</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+
+        
+
+            <!-- CAMPO 6: Checkbox privacidad -->
+            <div>
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                <label for="privacidad">Acepto la política de privacidad</label>
+            </div>
+            <!-- BOTÓN ENVÍO -->
+            <div>
+                <button type="submit">Enviar mensaje</button>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+</html> 
